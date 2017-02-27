@@ -9,3 +9,10 @@
 # > 5
 # > 10
 # > 15
+def multiply_by(x,y)
+x.each do |num|
+  puts num*y
+end
+end
+
+multiply_by([1, 2, 3], 5)

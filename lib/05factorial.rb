@@ -9,3 +9,9 @@
 #
 # > 120
 #
+def factorial(x)
+# p (1..x).inject(:*)
+p (1..x).reduce(1, :*)
+end
+
+factorial(5)

@@ -17,3 +17,11 @@ contacts = {
   Lenny: '444-444-4444',
   Daniel: '777-777-7777'
 }
+
+def print_contacts(x)
+  x.each do |key, value|
+    puts "#{key} has a phone number of #{value}"
+  end
+end
+
+print_contacts(contacts)
