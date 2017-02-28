@@ -9,9 +9,19 @@
 #
 # > 120
 #
-def factorial(x)
+def factorial(n)
 # p (1..x).inject(:*)
-p (1..x).reduce(1, :*)
+# :* block method
+# p (1..x).reduce(1, :*)
+# every recursion needs 2 things
+# 1) base case = when to stop = STOPS AT 0
+# 2) recursion case = what happens if it does not stop f(5)= 5* f(4)... to f(1) = 1* f(0)
+
+if (n==0)
+  1
+else
+  n * factorial(n-1)
+end
 end
 
-factorial(5)
+p factorial(3)
